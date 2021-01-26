@@ -61,6 +61,9 @@ GRAPHQL_JWT = {
  
     # optional
     "JWT_LONG_RUNNING_REFRESH_TOKEN": True,
+    "JWT_ALLOW_ANY_CLASSES": [
+        "graphql_auth.mutations.Register",
+    ],
 }
 
 MIDDLEWARE = [
